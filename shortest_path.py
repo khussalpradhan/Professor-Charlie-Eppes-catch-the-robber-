@@ -40,7 +40,7 @@ def dijkstra_sssp(graph, start_node, all_nodes):
             
         visited.add(u)
 
-        # Check all neighbors of the current node
+        # Checking all neighbors of the current node
         if u in graph:
             for v, weight in graph[u]:
                 # Only process nodes we haven't finalized
@@ -59,7 +59,7 @@ def dijkstra_sssp(graph, start_node, all_nodes):
 # --- Main Program to Run ---
 
 # 1. Define the graph input
-# This is the adjacency list for the graph you specified
+# This is the adjacency list prepared, from the pdf provided.
 my_graph = {
     1: [(2, 1), (11, 1)],
     2: [(1, 1), (3, 1), (21, 1)],
