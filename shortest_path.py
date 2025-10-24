@@ -2,13 +2,13 @@ import heapq
 
 def dijkstra_sssp(graph, start_node, all_nodes):
     """
-    Implements Dijkstra's SSSP algorithm using a min-heap.
+    Implementing Dijkstra's SSSP algorithm using a min-heap.
     
     Args:
         graph (dict): The graph represented as an adjacency list.
                       Format: {u: [(v, weight), ...]}
         start_node (int): The source vertex.
-        all_nodes (range): A range object of all node IDs (e.g., range(1, 23))
+        all_nodes (range): A range object of all node IDs (range(1, 23))
 
     Returns:
         tuple: (distances, parents)
